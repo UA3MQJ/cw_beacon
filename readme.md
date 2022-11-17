@@ -135,3 +135,22 @@ word list stm8ef
 
 https://github.com/TG9541/stm8ef/blob/master/docs/words.md
 https://github.com/TG9541/stm8ef/wiki/STM8-eForth-Example-Code
+
+
+arrays
+
+create syms 10 allot
+syms 10 cells dump
+
+127 syms !
+
+: pre S" UA3MQJ/B" ;
+pre cells dump
+
+CREATE LIMITS  1 C, 2 C, 3 C, 4 C, 5 C,
+LIMITS 5 cells dump
+CREATE LIMITS  1 C, 2 C, 3 C, 4 C, 5 C, redefined LIMITS   ok
+LIMITS 5 cells dump                    
+7F6ED5721708: 01 02 03 04  05 F9 7C BF - F7 FF 2F FF  E5 FE FF E5  ......|.../.....
+7F6ED5721718: 7C BF FF FF  F9 78 91 22 - 44 84 44 89  12 24 44 AF  |....x."D.D..$D.
+7F6ED5721728: 2D B8 BF 22  CB 2C B2 C2 -                           -..".,..
